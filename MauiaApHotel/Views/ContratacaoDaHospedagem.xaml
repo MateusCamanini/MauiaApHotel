@@ -55,7 +55,9 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar"/>
+                <Button Text="Avançar" Clicked="Button_Clicked" Padding="10" />
+                <Frame Margin="2"/>
+                <Button Text="Informações do projeto" Clicked="Button_Clicked_1"/>
 
             </VerticalStackLayout>
         </Frame>

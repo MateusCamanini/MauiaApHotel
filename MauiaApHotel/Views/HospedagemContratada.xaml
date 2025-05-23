@@ -2,11 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiaApHotel.Views.HospedagemContratada"
-             Title="HospedagemContratada">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="HospedagemContratada"
+             BackgroundColor="Black">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" Padding="0" >
+
+
+
+        <Frame BackgroundColor="AntiqueWhite">
+            <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" Padding=" 0">
+
+                <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <Label Text="Sobre este projeto:" TextColor="{StaticResource Primary}"  FontSize="20"/>
+
+                </HorizontalStackLayout>
+
+                <Label Text="Este codigo foi criado por Mateus Lourenço Camanini" TextColor="{StaticResource Primary}" FontSize="15"/>
+                        <Label Text="No dia 15/05/2025" TextColor="{StaticResource Primary}" FontSize="15"/>
+                
+            </VerticalStackLayout>
+        </Frame>
+        <Button Text="Voltar" BackgroundColor="{StaticResource Primary}" TextColor="AntiqueWhite" Clicked="Button_Clicked"/>
     </VerticalStackLayout>
+
 </ContentPage>
