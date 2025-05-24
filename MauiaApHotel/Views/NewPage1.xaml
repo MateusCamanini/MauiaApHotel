@@ -3,26 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiaApHotel.Views.HospedagemContratada"
              Title="HospedagemContratada"
-             BackgroundColor="Black">
+             BackgroundColor="{StaticResource Gray500}">
     <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" Padding="0" >
 
 
 
-        <Frame BackgroundColor="AntiqueWhite">
+        <Frame BackgroundColor="{StaticResource Gray600}" BorderColor="Pink">
             <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" Padding=" 0">
 
                 <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
-                    <Label Text="Sobre este projeto:" TextColor="{StaticResource Primary}"  FontSize="20"/>
+                    <Label Text="Sobre este projeto:" TextColor="Pink"  FontSize="20"/>
 
                 </HorizontalStackLayout>
 
-                <Label Text="Este codigo foi criado por Mateus Lourenço Camanini" TextColor="{StaticResource Primary}" FontSize="15"/>
-                <Label Text="No dia 15/05/2025" TextColor="{StaticResource Primary}" FontSize="15"/>
+                <Label Text="Este codigo foi criado por Mateus Lourenço Camanini" TextColor="Pink" FontSize="15"/>
+                <Label Text="No dia 15/05/2025" TextColor="Pink" FontSize="15"/>
 
             </VerticalStackLayout>
         </Frame>
-        <Button Text="Voltar" BackgroundColor="{StaticResource Primary}" TextColor="AntiqueWhite" Clicked="Button_Clicked"/>
+        <Button Text="Voltar" BackgroundColor="Pink" TextColor="Black" Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 
 </ContentPage>
