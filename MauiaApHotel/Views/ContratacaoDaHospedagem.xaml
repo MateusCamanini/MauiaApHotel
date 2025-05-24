@@ -31,7 +31,7 @@
                 </Grid>
 
                 <Label Text="Escolha sua suíte" />
-                <Picker x:Name="pck_quarto" Title="Selecione sua acomodação"/>
+                <Picker x:Name="pck_quarto" Title="Selecione sua acomodação" ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10" Margin="15">
                     <VerticalStackLayout>
@@ -40,7 +40,7 @@
                             
                             <Label Text="Check-in:"/>
                             
-                            <DatePicker x:Name="dtpck_checin" Format="dd/MM/yyyy"/>
+                            <DatePicker x:Name="dtpck_checin" Format="dd/MM/yyyy" DateSelected="dtpck_checin_DateSelected"/>
                             
                         </HorizontalStackLayout>
 
