@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using MauiaApHotel.Models;
 
 namespace MauiaApHotel.Views;
 
@@ -25,7 +26,22 @@ public partial class ContratacaoDaHospedagem : ContentPage
     {
         try
         {
-            App.Current.MainPage = new NewPage1();
+            Hospedageem h = new Hospedageem
+            {
+                QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
+                QntAdultos = Convert.ToInt32(stp_adultos.Value),
+                QntCriancas = Convert.ToInt32(stp_criancas.Value),
+                DataCheckIn = dtpck_checin.Date,
+                DataCheckOut = dtpck_checout.Date,
+
+            };
+
+            //App.Current.MainPage = new NewPage1();
+            Navigation.PushAsync(new NewPage1()
+            { 
+                BindingContext = h,
+            
+            });
         }
         catch (Exception ex) 
         {
